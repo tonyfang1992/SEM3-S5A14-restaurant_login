@@ -57,7 +57,7 @@ GITHUB_SECRET= //your Client secret
 GITHUB_CALLBACK= http://127.0.0.1:3000/auth/github/callback
 ```
 
-> #### 以 GitHub 登入要確定[Public profile](https://github.com/settings/profile) Public email 要有料
+> #### 以 GitHub 登入要確定[Public profile](https://github.com/settings/profile) 的 Public email 要有資料
 >
 > ![image](https://github.com/Wendy03/SEM3-S5A14-restaurant_login/blob/master/public/img/githubemail.PNG)
 
