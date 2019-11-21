@@ -69,16 +69,15 @@ module.exports = passport => {
       profileFields: ['email', 'displayName']
     }, (accessToken, refreshToken, profile, done) => {
       User.findOne({
-        email: profile._json.login
+        email: profile._json.email
       }).then(user => {
         if (!user) {
           const randomPassword = Math.random().toString(36).slice(-8)
-          const userEmail = `${profile._json.login}@githoub.com`
           bcrypt.genSalt(10, (err, salt) =>
             bcrypt.hash(randomPassword, salt, (err, hash) => {
               var newUser = User({
                 name: profile._json.name,
-                email: userEmail,
+                email: profile._json.email,
                 password: hash
               })
               newUser.save().then(user => {
