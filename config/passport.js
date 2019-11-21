@@ -28,6 +28,7 @@ module.exports = passport => {
     })
   )
 
+  //Facebook 登入
   passport.use(
     new FacebookStrategy({
       clientID: process.env.FACEBOOK_ID,
@@ -61,6 +62,7 @@ module.exports = passport => {
     })
   )
 
+  //GitHub 登入
   passport.use(
     new GitHubStrategy({
       clientID: process.env.GITHUB_ID,
