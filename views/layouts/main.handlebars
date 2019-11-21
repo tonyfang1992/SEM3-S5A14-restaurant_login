@@ -23,11 +23,19 @@
     <!-- navigation -->
     <nav class="navbar navbar-light bg-light fixed-top">
       <div class="container">
+        {{#if isAuthenticated}}
         <a class="navbar-brand" href="/">
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png"
             width="30" height="30" class="d-inline-block align-top" alt="我的餐廳清單">
           {{userName}}的餐廳清單
         </a>
+        {{else}}
+        <a class="navbar-brand" href="/">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png"
+            width="30" height="30" class="d-inline-block align-top" alt="我的餐廳清單">
+          管理餐廳清單
+        </a>
+        {{/if}}
         <div class="d-inline-block">
           {{#if isAuthenticated}}
           <a href="/restaurants/new" class="btn btn-primary mr-5">新增餐廳</a>
@@ -36,7 +44,7 @@
             Log Out
           </a>
           {{else}}
-          <a href="/users/register" class="btn btn-outline-dark mr-3">Sing Up</a>
+          <a href="/users/register" class="btn btn-outline-dark mr-3">Sign Up</a>
           <a href="/users/login" class="btn btn-outline-info">Log In</a>
           {{/if}}
         </div>
