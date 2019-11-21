@@ -1,0 +1,33 @@
+body {
+  background-image: url('https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5720/restaurants-list-cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-control::placeholder {
+  color: #aaaaaa;
+  font-size: 0.8rem;
+}
+
+.card {
+  box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.9);
+  background-color: #FFFAFA;
+}
+
+.card-body {
+  margin-top: 50px;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+label {
+  font-family: Bradley Hand, cursive;
+  font-weight: 700;
+}
+
+.warning-block {
+  font-size: 0.7rem;
+  color: #888888;
+}
