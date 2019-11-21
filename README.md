@@ -9,7 +9,7 @@
 1.  node.js v-10.15.0
 
 2.  專案套件
-    > - bcryptj": ^2.4.3
+    > - bcryptj: ^2.4.3
     > - body-parser: ^1.19.0
     > - connect-flash: ^0.1.1
     > - dotenv: ^8.2.0
