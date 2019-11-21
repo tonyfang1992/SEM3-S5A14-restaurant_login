@@ -1,0 +1,97 @@
+<div class="row my-5 edit-form">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center pb-5">修改<span class="text-info">{{{restaurant.name}}}</span>餐廳資料</h1>
+      {{> messages }}
+      <form action="/restaurants/{{{restaurant.id}}}/edit?_method=PUT" method="POST">
+
+        <div class='row'>
+          <div class="form-group col-md-6">
+            <label for="name">中文名稱:</label>
+            <input type="text" class="form-control" name="name" id="name" value="{{{restaurant.name}}}" maxlength="20"
+              required>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="name_en">英文名稱:</label>
+            <input type="text" class="form-control" name="name_en" id="name_en" value="{{{restaurant.name_en}}} "
+              maxlength="20" required>
+          </div>
+
+        </div>
+
+        <div class='row'>
+          <div class="form-group col-md-6">
+            <label for="phone">
+              <i class="fas fa-mobile-alt pr-2"></i>
+              電話:
+            </label>
+            <input type="text" class="form-control" name="phone" id="phone" maxlength="12"
+              value="{{{restaurant.phone}}}" pattern="^[0-9]{2}\s[0-9]{,4}\s[0-9]{4}$" required>
+            <span class="warning-block">00 0000 0000</span>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="category">
+              <i class="fas fa-utensils pr-2"></i>
+              類別:
+            </label>
+            <input type="text" class="form-control" name="category" id="category" value="{{{restaurant.category}}}"
+              required>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="rating">
+              <i class="fas fa-star fa-xs"></i>
+              評分:
+            </label>
+            <input type="number" step="0.1" min="1" max="5" class="form-control" name="rating" id="rating"
+              value="{{{restaurant.rating}}}" placeholder="1~5分" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="location">
+            <i class="fas fa-map-marker-alt pr-2"></i>
+            地址:
+          </label>
+          <input type="text" class="form-control" name="location" id="location" value="{{{restaurant.location}}}"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="google_map">
+            <i class="fas fa-location-arrow pr-2 fa-xs"></i>
+            Google Map:
+          </label>
+          <input type="text" class="form-control" name="google_map" id="google_map" placeholder="https://goo.gl/maps/"
+            value="{{{restaurant.google_map}}}" pattern="https://goo.gl/maps/[A-Za-z0-9]*" required>
+          <span class="warning-block">https://goo.gl/maps/</span>
+        </div>
+
+        <div class="form-group">
+          <label for="description">簡介:</label>
+          <textarea class="form-control" name="description" rows="5" id="description" maxlength="200"
+            required>{{restaurant.description}}</textarea>
+          <span class="warning-block">最多200字</span>
+        </div>
+
+        <div class="form-group">
+          <label for="image">
+            <i class="fa fa-picture-o" aria-hidden="true"></i>
+            圖片:
+          </label>
+          <input type="text" class="form-control" name="image" id="image" placeholder="http://"
+            value="{{{restaurant.image}}}" pattern="(http|https):\/\/([\w.]+\/?)\S*" required>
+          <span class="warning-block">http://</span>
+        </div>
+
+        <div class="pt-4 text-center">
+          <button type="submit" class="btn btn-success mr-5">Save</button>
+          <a href="/" class="btn btn-secondary">取消</a>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+</div>
