@@ -1,6 +1,6 @@
 # 餐廳清單
 
-#### 使用者登入帳號可以建立屬於自己餐廳清單，可以新增、修改、刪除餐廳清單，新增排序功能
+#### 使用者登入帳號可以建立屬於自己餐廳清單，可以新增、修改、刪除餐廳清單，排序功能
 
 ## Installing
 
@@ -95,11 +95,11 @@ GITHUB_CALLBACK= http://127.0.0.1:3000/auth/github/callback
 
 ![image](https://github.com/Wendy03/SEM3-S5A14-restaurant_login/blob/master/public/img/login.PNG)
 
-###### 1.註冊
+###### 2.註冊
 
 ![image](https://github.com/Wendy03/SEM3-S5A14-restaurant_login/blob/master/public/img/signup.PNG)
 
-###### 1.個人頁面
+###### 3.個人頁面
 
 ![image](https://github.com/Wendy03/SEM3-S5A14-restaurant_login/blob/master/public/img/userpage.PNG)
 
