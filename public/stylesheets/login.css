@@ -4,6 +4,18 @@ body {
   background-size: cover;
 }
 
+.navbar .navbar-brand {
+  color: #4592af;
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+}
+
+.navbar .navbar-brand:hover {
+  color: #226089;
+}
+
+
+
 .form-control::placeholder {
   color: #aaaaaa;
   font-size: 0.8rem;

@@ -4,6 +4,12 @@ header {
 
 .navbar .navbar-brand {
   color: #4592af;
+  font-family: 'Indie Flower',
+    cursive;
+  font-family: 'Caveat',
+    cursive;
+  font-family: 'Courgette',
+    cursive;
 }
 
 .navbar .navbar-brand:hover {

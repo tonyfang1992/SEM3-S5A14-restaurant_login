@@ -58,9 +58,17 @@
 
           </div>
           <div class="card-footer">
-            <a href="/restaurants/{{{this.id}}}/edit" class="btn btn-info btn-sm mr-3">Edit</a>
-            <button type="button" data-toggle="modal" data-target="#delete{{{this.id}}}"
-              class="btn btn-outline-danger btn-sm">delete</button>
+            <div class="text-right">
+              <a href="/restaurants/{{{this.id}}}/edit" class="btn btn-info btn-sm mr-4">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                Edit
+              </a>
+              <button type="button" data-toggle="modal" data-target="#delete{{{this.id}}}"
+                class="btn btn-outline-danger btn-sm">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                Delete
+              </button>
+            </div>
           </div>
         </div>
       </a>

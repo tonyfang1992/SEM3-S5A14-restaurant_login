@@ -4,6 +4,20 @@ body {
   background-size: cover;
 }
 
+.navbar .navbar-brand {
+  color: #4592af;
+  font-family: 'Indie Flower',
+    cursive;
+  font-family: 'Caveat',
+    cursive;
+  font-family: 'Courgette',
+    cursive;
+}
+
+.navbar .navbar-brand:hover {
+  color: #226089;
+}
+
 .form-control::placeholder {
   color: #aaaaaa;
   font-size: 0.8rem;
@@ -20,11 +34,16 @@ body {
 
 h1 {
   font-weight: 900;
+  font-family: 'Indie Flower',
+    cursive;
+  font-family: 'Caveat',
+    cursive;
 }
 
 label {
   font-family: Bradley Hand, cursive;
   font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .warning-block {
