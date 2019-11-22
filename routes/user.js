@@ -42,7 +42,7 @@ router.post('/register', registerInputCheck, (req, res) => {
   if (!errors.isEmpty()) {
     for (let i = 0; i < errors.array().length; i++) {
       errorMessages.push({ message: errors.array()[i]['msg'] })
-      console.log(errorMessages)
+      // console.log(errorMessages)
     }
     res.render('register', {
       errorMessages,
