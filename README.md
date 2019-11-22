@@ -34,9 +34,10 @@
 
 ```
 
-1.切換目錄到專案: cd SEM3-S5A14-restaurant_login
-2.安裝套件: npm install
-3.新增種子資料
+1.使用終端機切換目錄到專案: cd SEM3-S5A14-restaurant_login
+2.使用終端機安裝套件: npm install
+3.開啟 Robo 3T，並在 localhost 上面按右鍵 Create Database，建立一個新的資料庫 restaurant
+4.使用終端機新增種子資料
 - cd ~ models\seeds
 - node restaurantSeeder.js
 - 確認 Robo 3T 資料已經建立了
