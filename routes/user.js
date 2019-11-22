@@ -36,7 +36,7 @@ router.post('/register', registerInputCheck, (req, res) => {
   }
 
   if (password !== password2) {
-    errorMessages.push({ message: '兩次密碼輸入錯誤' })
+    errorMessages.push({ message: '兩次密碼輸入不一樣' })
   }
 
   if (!errors.isEmpty()) {
