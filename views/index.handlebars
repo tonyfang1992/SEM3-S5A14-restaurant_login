@@ -11,27 +11,26 @@
             <button class="btn btn-major" type="submit" id="search-button"><i class="fas fa-search"></i></button>
           </div>
         </div>
-        <div class="dropdown mt-2">
-          <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            排序{{#if sortName}}<span>-> {{sortName}}</span>{{/if}}
-          </button>
 
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=name-asc">店名:A-Z</a>
-            <a class="dropdown-item" href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=name-desc">店名:Z-A</a>
-            <a class="dropdown-item"
-              href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=category-asc">類別:A-Z</a>
-            <a class="dropdown-item" href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=rating-asc">評分:高-低</a>
-            <a class="dropdown-item"
-              href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=rating-desc">評分:低-高</a>
-            <a class="dropdown-item"
-              href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=location-asc">地址:A-Z</a>
-          </div>
-        </div>
       </form>
     </div>
 
+  </div>
+</div>
+
+<div class="dropdown mb-4 mr-5 text-right">
+  <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">
+    排序{{#if sortName}}<span>-> {{sortName}}</span>{{/if}}
+  </button>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=name-asc">店名:A-Z</a>
+    <a class="dropdown-item" href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=name-desc">店名:Z-A</a>
+    <a class="dropdown-item" href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=category-asc">類別:A-Z</a>
+    <a class="dropdown-item" href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=rating-asc">評分:高-低</a>
+    <a class="dropdown-item" href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=rating-desc">評分:低-高</a>
+    <a class="dropdown-item" href="/search?{{#if keyword}}keyword={{keyword}}&{{/if}}sort=location-asc">地址:A-Z</a>
   </div>
 </div>
 
