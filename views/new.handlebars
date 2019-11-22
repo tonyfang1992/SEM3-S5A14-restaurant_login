@@ -25,7 +25,10 @@
             </label>
             <input type="text" class="form-control" name="phone" id="phone" maxlength="12" placeholder="02 000 0000"
               pattern="^[0]([0-9]{1})\s([0-9]{3,4})\s([0-9]{4})$" required>
-            <span class="warning-block">00 0000 0000</span>
+            <span class="warning-block ml-2">
+              <i class="fa fa-exclamation-triangle mr-1" aria-hidden="true"></i>
+              00 0000 0000
+            </span>
           </div>
 
           <div class="form-group col-md-3">
@@ -33,7 +36,7 @@
               <i class="fas fa-utensils pr-2"></i>
               類別:
             </label>
-            <input type="text" class="form-control" name="category" id="category" required>
+            <input type="text" class="form-control" name="category" id="category" maxlength="7" required>
           </div>
 
           <div class="form-group col-md-3">
@@ -61,14 +64,20 @@
           </label>
           <input type="text" class="form-control" name="google_map" id="google_map" placeholder="https://goo.gl/maps/"
             pattern="https://goo.gl/maps/[A-Za-z0-9]*" required>
-          <span class="warning-block">https://goo.gl/maps/</span>
+          <span class="warning-block ml-2">
+            <i class="fa fa-exclamation-triangle mr-1" aria-hidden="true"></i>
+            https://goo.gl/maps/
+          </span>
         </div>
 
         <div class="form-group">
           <label for="description">簡介:</label>
           <textarea class="form-control" name="description" rows="7" id="description" maxlength="200"
             required></textarea>
-          <span class="warning-block">最多200字</span>
+          <span class="warning-block ml-2">
+            <i class="fa fa-exclamation-triangle mr-1" aria-hidden="true"></i>
+            最多200字
+          </span>
         </div>
 
         <div class="form-group">
@@ -78,7 +87,10 @@
           </label>
           <input type="text" class="form-control" name="image" id="image" placeholder="http://"
             pattern="(http|https):\/\/([\w.]+\/?)\S*" required>
-          <span class="warning-block">http://</span>
+          <span class="warning-block ml-2">
+            <i class="fa fa-exclamation-triangle mr-1" aria-hidden="true"></i>
+            http://
+          </span>
         </div>
 
         <div class="pt-4 text-center">

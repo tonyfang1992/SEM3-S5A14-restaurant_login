@@ -14,8 +14,6 @@ body {
   color: #226089;
 }
 
-
-
 .form-control::placeholder {
   color: #aaaaaa;
   font-size: 0.8rem;
@@ -29,7 +27,8 @@ body {
   margin-top: 50px;
 }
 
-.fa {
+.fa-facebook-square,
+.fa-github {
   font-size: 1.5rem;
 }
 

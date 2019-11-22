@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(255, 254, 246, 0.986);
+}
+
 header {
   overflow: hidden;
 }
@@ -56,6 +60,10 @@ header {
   border-color: #ced4da;
 }
 
+.select {
+  margin-top: -50px;
+}
+
 .card {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -73,6 +81,10 @@ header {
   font-size: 3.5rem;
   text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   font-weight: 900;
+}
+
+p {
+  font-size: 1.1rem;
 }
 
 .text-danger {
