@@ -112,8 +112,8 @@ header {
 }
 
 .card:hover {
-  box-shadow: 0 16px 22px 0 rgba(90, 91, 95, 0.5);
-  top: -7px;
+  box-shadow: 12px 12px 7px rgba(58, 57, 57, 0.9);
+  top: -5px;
 }
 
 
