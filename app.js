@@ -66,7 +66,7 @@ app.use((req, res, next) => {
   res.locals.isAuthenticated = req.isAuthenticated()
   res.locals.success_msg = req.flash('success_msg')
   res.locals.warning_msg = req.flash('warning_msg')
-  res.locals.userName = req.user ? req.user.name : '我'
+  res.locals.userName = req.user ? req.user.name || '我' : '我'
   // res.locals.userName = req.user.name
   next()
 })
