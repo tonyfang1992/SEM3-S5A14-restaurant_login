@@ -3,8 +3,6 @@ const router = express.Router()
 const passport = require('passport')
 const bcrypt = require('bcryptjs')
 const User = require('../models/user')
-const { check, validationResult } = require('express-validator')
-const { registerInputCheck } = require('../models/validationResult')
 
 //登入頁面
 router.get('/login', (_req, res) => {
@@ -24,9 +22,8 @@ router.get('/register', (_req, res) => {
 })
 
 //註冊檢查
-router.post('/register', registerInputCheck, (req, res) => {
+router.post('/register', (req, res) => {
   const { name, email, password, password2 } = req.body
-  const errors = validationResult(req)
 
   // 加入錯誤訊息提示
   let errorMessages = []
@@ -39,20 +36,11 @@ router.post('/register', registerInputCheck, (req, res) => {
     errorMessages.push({ message: '兩次密碼輸入不一樣' })
   }
 
-  if (!errors.isEmpty()) {
-    for (let i = 0; i < errors.array().length; i++) {
-      errorMessages.push({ message: errors.array()[i]['msg'] })
-      // console.log(errorMessages)
-    }
-    res.render('register', {
-      errorMessages,
-      name,
-      email,
-      password,
-      password2,
-      style: 'login.css'
-    })
-  } else if (errorMessages.length > 0) {
+  if (password < 7) {
+    errorMessages.push({ message: '密碼大於7位數' })
+  }
+
+  if (errorMessages.length > 0) {
     res.render('register', {
       errorMessages,
       name,
